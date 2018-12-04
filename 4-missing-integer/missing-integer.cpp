@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a[] = {3, 16, 2, 1, -22, -14, 77, 40, -54, 1207, 4, 5, 21, 6};
+    int a[] = {3, 16, 2, 2, -22, -14, 77, 40, -54, 120, 4, 5, 21, 6, 1};
     
     // move the non positive elements at the beginning
     int counter = 0;
@@ -17,13 +17,17 @@ int main()
         }
     }
 
-    for (int i = counter; i < sizeof(a)/sizeof(*a); i++) {
-        a[a[i]] = -1;
+    std::copy(a + counter, a + sizeof(a)/sizeof(*a), a);
+
+    for (int i = 0; i < sizeof(a)/sizeof(*a); i++) {
+        if(abs(a[i]) - 1 < sizeof(a)/sizeof(*a) && a[abs(a[i]) - 1] > 0) {
+            a[abs(a[i]) - 1] = -a[abs(a[i]) - 1];
+        }
     }
 
-    for (int i = counter; i < sizeof(a)/sizeof(*a); i++) {
+    for (int i = 0; i < sizeof(a)/sizeof(*a); i++) {
         if (a[i] > 0) {
-            cout << i << endl;
+            cout << i + 1 << endl;
             break;
         }
     }
