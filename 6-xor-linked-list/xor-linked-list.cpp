@@ -28,7 +28,7 @@ Node* insert(int data)
         Node *new_node = new Node;
         new_node->data = data;
         new_node->xr = XOR(tail, NULL);
-        tail->xr = XOR(new_node, XOR(tail->xr, NULL));
+        tail->xr = XOR(new_node, tail->xr);
         tail = new_node;
     }
 
@@ -75,8 +75,9 @@ int main()
     insert(40); 
 
     list();
+    list();
 
-    cout << get(0)->data;
+    cout << get(0)->data << endl;
   
     return 0; 
 }
