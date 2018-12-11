@@ -17,3 +17,5 @@ Repo with solutions to the daily problems received via the dailycodingproblem.co
 8. A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value. Given the root to a binary tree, count the number of unival subtrees.
 
 9. Given a list of integers, write a function that returns the largest sum of non-adjacent numbers. Numbers can be 0 or negative.
+
+10. Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
