@@ -27,3 +27,5 @@ Repo with solutions to the daily problems received via the dailycodingproblem.co
 13. Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters. (TODO)
 
 14. The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.
+
+15. Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
