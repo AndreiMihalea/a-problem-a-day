@@ -31,3 +31,5 @@ Repo with solutions to the daily problems received via the dailycodingproblem.co
 15. Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
 
 16. You run an e-commerce website and want to record the last N order ids in a log.
+
+17. Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.
