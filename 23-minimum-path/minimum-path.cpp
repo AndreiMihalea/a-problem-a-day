@@ -67,7 +67,7 @@ int astar(bool map[][width], pair<int, int> start, pair<int, int> end,
 
         vector<pair<int, int>> neighbours = getNeighbours(map, current);
         for (auto& n : neighbours) {
-            double new_cost = discovered[current.first * width + current.second].second;
+            double new_cost = discovered[current.first * width + current.second].second + 1;
             if (discovered.find(n.first * width + n.second) == discovered.end() ||
                      new_cost < discovered[n.first * width + n.second].second) {
                 discovered[n.first * width + n.second] = make_pair(current, new_cost);
