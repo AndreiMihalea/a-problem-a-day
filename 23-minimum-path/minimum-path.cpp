@@ -71,7 +71,7 @@ int astar(bool map[][width], pair<int, int> start, pair<int, int> end,
             if (discovered.find(n.first * width + n.second) == discovered.end() ||
                      new_cost < discovered[n.first * width + n.second].second) {
                 discovered[n.first * width + n.second] = make_pair(current, new_cost);
-                double priority = new_cost = heuristic(end, n);
+                double priority = new_cost + heuristic(end, n);
                 pq.push(make_pair(n, priority));
             }
         }
