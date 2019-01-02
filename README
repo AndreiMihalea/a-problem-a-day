@@ -53,3 +53,7 @@ Repo with solutions to the daily problems received via the dailycodingproblem.co
 26. Given a singly linked list and an integer k, remove the kth last element from the list. k is guaranteed to be smaller than the length of the list.
 
 27. Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).
+
+28. Write an algorithm to justify text. Given a sequence of words and an integer line length k, return a list of strings which represents each line, fully justified.
+
+29. Run-length encoding is a fast and simple method of encoding strings. The basic idea is to represent repeated successive characters as a single count and character. Implement run-length encoding and decoding. 
