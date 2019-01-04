@@ -59,3 +59,5 @@ Repo with solutions to the daily problems received via the dailycodingproblem.co
 29. Run-length encoding is a fast and simple method of encoding strings. The basic idea is to represent repeated successive characters as a single count and character. Implement run-length encoding and decoding. 
 
 30. You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. Suppose it will rain and all spots between two walls get filled up.
+
+31. The edit distance between two strings refers to the minimum number of character insertions, deletions, and substitutions required to change one string to the other. Given two strings, compute the edit distance between them.
